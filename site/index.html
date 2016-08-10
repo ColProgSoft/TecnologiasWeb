@@ -41,9 +41,13 @@
 				<h2>GitHubCrear una cuenta en GitHub.com</h2>
 				<h3>Instrucciones</h3>
 				<p>Lo siguiente es vincular nuestra máquina de trabajo con git</p>
-				<p class="linux-command">$ git config --global user.mail < email@gmail.com ></p>
+				<p class="linux-command">
+					$ git config --global user.mail < email@gmail.com >
+				</p>
 
-				<p class="linux-command">$ git config --global user.name < NombreDeUsuario ></p>
+				<p class="linux-command">
+					$ git config --global user.name < NombreDeUsuario >
+				</p>
 
 				<p>
 					Ahora lo que tenemos que hacer es crear un repositorio para nuestro proyecto.
@@ -132,7 +136,8 @@
 						</pre><br><br>
 					</p>
 					Ahora enviamos un commit 
-					<p class="linux-command">$ git commit -m "Página de inicio."<br>
+					<p class="linux-command">
+						$ git commit -m "Página de inicio."<br>
 						3 files changed, 178 insertions(+)<br>
 						create mode 100644 site/README.md<br>
 						create mode 100644 site/css/estilos.css<br>
@@ -140,7 +145,7 @@
 					</p>
 					Verificamoe el Status
 					<p class="linux-command">
-						git status<br> On branch gh-pages<br>Your branch is ahead of 'origin/gh-pages' by 1 commit.<br> (use "git push" to publish your local commits)<br>nothing to commit, working directory clean
+						$ git status<br> On branch gh-pages<br>Your branch is ahead of 'origin/gh-pages' by 1 commit.<br> (use "git push" to publish your local commits)<br>nothing to commit, working directory clean
 					</p>
 					Ya tenemos nuestro contenido listo para subir a GitHub. para esto usaremos el siguiente comando, el cual por seguridad, nos solicitará el nombre del usuario y la contraseña del mismo.
 					<p class="linux-command">
@@ -164,11 +169,15 @@
 					el cual nos muestra que se ha realizado modificaciones en los archivos que hayan sido alterados, y para enviar estos cambios usaremos el siguiente comando
 
 					<p class="linux-command">
-						git add site/index.html
+						$ git add site/index.html
 					</p>
 					indicando la ruta del archivo que se va a modificar, si verificamos con git status nos dirá que se ha modificado el archivo que hayamos modificado.<br>lo siguiente, es enviar un mensaje commit usando 
 					<p class="linux-command">
-						git commit -m "Pequeña edición del contenido del sitio."
+						$ git commit -m "Pequeña edición del contenido del sitio."
+					</p>
+					Lo último es enviar las modificaciones 
+					<p class="linux-command">
+						$ git push
 					</p>
 
 
