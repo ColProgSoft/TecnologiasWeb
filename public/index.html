@@ -5,7 +5,7 @@
   <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Mis Estilos css -->
-  <link href="css/estilos.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
   <title>Convertir un psd en una Página Web.</title>
 </head>
 <body>
@@ -133,7 +133,17 @@
     <li></li>
   </ul>
 
-  <script src="js/main.js"></script>
+  <script src="components/systemjs/system.js"></script>
+  <script>
+    SystemJS.config({
+      baseURL: 'js/'
+    });
+
+    // loads /js/main.js
+    SystemJS.import('main.js');
+  </script>
+
+  <!-- <script src="js/main.js"></script> -->
 
 </body>
 </html>
