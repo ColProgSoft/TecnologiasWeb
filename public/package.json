@@ -1,0 +1,31 @@
+{
+  "name": "PROJECT_NAME",
+  "version": "0.4.6",
+  "description": "DESCRIPTION_PROJECT",
+  "author": "AUTHOR_PROJECT",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "materialize",
+    "material-design"
+  ],
+  "homepage": "URL_SITE",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "bower": "^1.7.9",
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6",
+    "lodash.foreach": "^4.4.1",
+    "postcss-inline-comment": "^3.0.0",
+    "postcss-partial-import": "^2.0.0",
+    "precss": "^1.4.0",
+    "systemjs": "^0.19.36"
+  }
+}

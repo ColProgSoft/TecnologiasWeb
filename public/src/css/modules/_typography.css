@@ -1,0 +1,75 @@
+/* Example import with @font-face and declarated variable
+
+@font-face {
+  font-family: 'Posterama 2001 Black';
+  src: url('fonts/Posterama 2001 Black.eot');
+  src: local('☺'), url('../fonts/Posterama 2001 Black.woff') format('woff'), url('../fonts/Posterama 2001 Black.ttf') format('truetype'), url('../fonts/Posterama 2001 Black.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-bold: 'Posterama 2001 Bold'; */
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+  strong{
+
+  }
+
+  span{
+
+  }
+}
+
+strong{
+
+}
+
+span{
+
+}
+
+.content_WP{
+  .content__notfound{
+
+  }
+
+  .content__meta{
+
+  }
+
+  .content__header{
+    .title{
+
+    }
+
+    .subtitle{
+
+    }
+  }
+
+  .content__info{
+    &.content{
+
+    }
+
+    &.excerpt{
+
+    }
+
+    h3.title{
+
+    }
+  }
+}
