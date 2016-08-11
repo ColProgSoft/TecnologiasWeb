@@ -20,8 +20,8 @@
 
 .sass-cache
 
-.public/bower_components
+public/bower_components
 
-.public/node_modules
+public/node_modules
 
-.public/typings
+public/typings
