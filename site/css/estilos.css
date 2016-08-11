@@ -27,11 +27,11 @@ header h1{
 	text-align: center;
 }
 header nav{
-	background: #000;
+	background: #fff;
 	width: 50%;
 	margin: auto;
 }
-p.{
+p{
 	margin-top: 10px;
 	margin-bottom: 10px
 }
@@ -70,10 +70,10 @@ div.congrats{
 	background-color: rgb(55,55,55);
 }
 div.introduction{
-	color: #fff;
-	background: #000;
+	background: rgba(050,190,047,.5);
 	margin: auto;
 	width: 80%;
+	color: #fff;
 }
 div.introduction p{
 
