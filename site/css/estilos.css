@@ -20,7 +20,7 @@ div{
 header{
 	padding-bottom: 15px;
 	width: 100%;
-	background-color: #cdefff;
+	background-color: #FFC107;
 	margin-bottom: 10px;
 }
 header h1{
@@ -76,5 +76,14 @@ div.introduction{
 	color: #fff;
 }
 div.introduction p{
+
+}
+.welcome {
+	background: #303F9F;
+	color: #D32F2F;
+}
+.link-nav{
+	color: #ff0000;
+	display: inline;
 
 }

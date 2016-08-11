@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Mis Estilos css -->
+    <link href="estilos.css" rel="stylesheet">
+	<title>Convertir un psd en una Página Web.</title>
+</head>
+<body>
+	<header>
+
+		
+		<div class="introduction">
+			<h1>De .PSD A Web Dinámica</h1>
+			<p>Este es un proceso sencillo de como pasar un archivo .psd a una página web dinámica utilizando las tecnologías web HTML CSS JavaScript, entre otras tecnologías web.</p>
+			<h2>Configurar el entorno de desarrollo</h2>
+			
+			<p>Para realizar este ejercicio necesitaremos las siguientes herramientas.</p>		
+		</div>
+	</header>
+
+		
+
+	<ul>
+
+		<li>Instalar Google Chrome Browser (Pues este por defecto viene con CDT (Crome Developers Tools).)</li><hr width="50%">
+		
+		<li>Sublime Text 3 (o cualquier editor de Código)</li>
+		<h3>Instrucciones</h3>
+		<p>Ir a la página de <a href="http://www.sublimetext.com/3" target="_blank">SublimeText3</a></p><hr width="50%">
+		
+		<li>
+			<div class="instructions">
+				<h2>Instalación y configuración de Git <br> (Sistema de control de versiones.)</h2>
+				<h3>Instrucciones</h3>
+				<p>Ir a la página de <a href="https://git-scm.com/downloads" target="_blank">Git</a> y descargar su version de sistema operativo. en este caso usando linux usaremos el siguiente comando
+				</p>
+				<p class="linux-command">$ sudo apt-get install git</p>
+			</div>
+		</li>
+		<hr>
+		<li>
+			<div class="instructions">
+				<!-- Git Hub -->
+				<h2>GitHubCrear una cuenta en GitHub.com</h2>
+				<h3>Instrucciones</h3>
+				<p>Lo siguiente es vincular nuestra máquina de trabajo con git</p>
+				<p class="linux-command">
+					$ git config --global user.mail < email@gmail.com >
+				</p>
+
+				<p class="linux-command">
+					$ git config --global user.name < NombreDeUsuario >
+				</p>
+
+				<p>
+					Ahora lo que tenemos que hacer es crear un repositorio para nuestro proyecto.
+				</p>
+				<p>
+					Despues de haber creado el repositorio y la página de GitHub, lo siguiente que debemos hacer es clonarlo en nuestra máquina para trabajar localmente y posteriormente subirlo.
+				</p>
+				<p>
+					creamos un directorio para alojar nuestro proyecto
+					<p class="linux-command">
+						$ mkdir ProyectosGitHub
+					</p>
+					ingresamos en el directorio
+					<p class="linux-command">
+						$ cd ProyectosGitHub
+					</p>
+					Ahora clonamos nuestro repositorio con el suguiente comando
+					<p class="linux-command">
+						$ git clone https://github.com/ColProgSoft/TecnologiasWeb.git
+					</p>
+					listamos nuestros repositorios clonados.
+					<p class="linux-command">
+						$ ls <br>TecnologiasWeb
+					</p>
+					Ingresamos en el repositorio, listamos el contenido
+					<p class="linux-command">
+						$ cd TecnologiasWeb <br>$ ls <br>README.md
+					</p>
+					Verificamos el Estado del repositorio.
+					<p class="linux-command">
+						$ git status <br> On branch master <br>Your branch is up-to-date with 'origin/master'. <br>nothing to commit, working directory clean
+					</p>
+					Para cambiar de Branch a las páginas de GitHub, simplemente usamos el siguiente comando:
+					<p class="linux-command">
+						$ git checkout gh-pages <br>Branch gh-pages set up to track remote branch gh-pages from origin. <br>Switched to a new branch 'gh-pages'
+					</p>
+					Verificamos el Estado del repositorio.
+					<p class="linux-command">
+						$ git status <br> On branch gh-pages <br>Your branch is up-to-date with 'origin/gh-pages'. <br>nothing to commit, working directory clean
+					</p>
+					listamos el contenido.
+					<p class="linux-command">
+						$ ls <br>index.html params.json stylesheets
+					</p>
+					creamos un directorio para alojar nuestro sitio
+					<p class="linux-command">
+						$ mkdir site
+					</p>
+					ingresamos en el directorio
+					<p class="linux-command">
+						$ cd site
+					</p>
+
+					Alojamos nuestro sitio dentro de este directorio y listamos los archivos
+					<p class="linux-command">
+						$ ls <br>css  img  index.html  README.md
+					</p>
+					Verificamos el Estado del repositorio.
+					<p class="linux-command">
+						$ git status <br> On branch gh-pages <br>Your branch is up-to-date with 'origin/gh-pages'. <br>Untracked files:<br>  (use "git add < file >..." to include in what will be commited) <br><br>		./<br><br> nothing added to commit but untracked files present (use "git add" to track)<br>
+					</p>
+					Lo cual nos muestra un
+					subimos un directorio
+					<p class="linux-command">
+						$ cd ..
+					</p>
+					Verificamos el Estado del repositorio.
+					<p class="linux-command">
+						$ git status <br> On branch gh-pages <br>Your branch is up-to-date with 'origin/gh-pages'. <br>Untracked files:<br>  (use "git add < file >..." to include in what will be commited) <br><br>		site/<br><br> nothing added to commit but untracked files present (use "git add" to track)<br>
+					</p>
+					Ahora enviamos los cambios
+					<p class="linux-command">
+						$ git add .
+					</p>
+					Elige si existe un único directorio. <br><br>
+
+					Verificamos el Estado del repositorio.
+					<p class="linux-command">
+						$ git status <br> On branch gh-pages <br>Your branch is up-to-date with 'origin/gh-pages'. <br>Changes to be commited:<br>  (use "git add < file >..." to include in what will be commited) <br><br>
+							new file:   site/README.md<br>
+							new file:   site/css/estilos.css<br>
+							new file:   site/index.html<br>
+						<br><br>
+					</p>
+					Ahora enviamos un commit 
+					<p class="linux-command">
+						$ git commit -m "Página de inicio."<br>
+						3 files changed, 178 insertions(+)<br>
+						create mode 100644 site/README.md<br>
+						create mode 100644 site/css/estilos.css<br>
+						create mode 100644 site/index.html<br>
+					</p>
+					Verificamoe el Status
+					<p class="linux-command">
+						$ git status<br> On branch gh-pages<br>Your branch is ahead of 'origin/gh-pages' by 1 commit.<br> (use "git push" to publish your local commits)<br>nothing to commit, working directory clean
+					</p>
+					Ya tenemos nuestro contenido listo para subir a GitHub. para esto usaremos el siguiente comando, el cual por seguridad, nos solicitará el nombre del usuario y la contraseña del mismo.
+					<p class="linux-command">
+						$ git push<br>
+						Counting objects: 6, done.<br>
+						Delta compression using up to 4 threads.<br>
+						Compressing objects: 100% (4/4), done.<br>
+						Writing objects: 100% (4/4), 2.27 KiB | 0 bytes/s, done.<br>
+						Total 4 (delta 1), reused 0 (delta 0)<br>
+						To https://github.com/ColProgSoft/TecnologiasWeb.git<br>
+						   2eaafc7..ca62866  gh-pages -> gh-pages<br>
+					</p>
+
+					Ahora vamos a ver como enviar cambios desde nuestra terminal usando git
+
+
+					Vamos a realizar alguna modificación en nuestro archivo index.html para ver lo que sucede. despues usamos el comando:
+					<p class="linux-command">
+						$ git status
+					</p>
+					el cual nos muestra que se ha realizado modificaciones en los archivos que hayan sido alterados, y para enviar estos cambios usaremos el siguiente comando
+
+					<p class="linux-command">
+						$ git add site/index.html
+					</p>
+					indicando la ruta del archivo que se va a modificar, si verificamos con git status nos dirá que se ha modificado el archivo que hayamos modificado.<br>lo siguiente, es enviar un mensaje commit usando 
+					<p class="linux-command">
+						$ git commit -m "Pequeña edición del contenido del sitio."
+					</p>
+					Lo último es enviar las modificaciones 
+					<p class="linux-command">
+						$ git push
+					</p>
+					Esto enviará en cuestion de segundos nuestros cambios a los servidores de GitHub para visualizarlos en internet.
+
+					Ahora podemos 
+
+					<div class="congrats">
+						<div class="row">
+							<p>
+								Felicidades, si llegaste hasta aquí siguiendo todos los pasos, estas listo para trabajar con GitHub.com tu página de GitHub.io ya está en línea y puedes trabajar de manera local y enviar cambios en cualquier momento
+							</p>
+						</div>
+					</div>
+
+
+				</p>
+				Listo!!! <br>Ahora tenemos listo el repositorio en nuestra máquina para trabajar con GitHub de forma local
+
+
+				para subir los cambios a realizados a nuestros repositorios, nos ubicamos en la carpeta del proyecto clonado.
+				<p class="linux-command">$ cd ProyectoClonado</p>
+				creamos los archivos necesarios que necesitamos subir y agregamos las modificaciones que necesitemos en nuestros archivos y ejecutamoe este comando.
+
+				<p class="linux-command">$ git status</p>
+				verifica el estado de los paquetes.
+
+				<p class="linux-command">$ git add < file ></p>
+				este comando es para elegir a cual será enviado.
+
+
+
+				<p class="linux-command">$ git add .</p>
+				Elige si existe un único directorio.
+
+				<p class="linux-command">$ git commit -m "Página de inicio"</p>
+				Envía un mensaje.
+
+				<p class="linux-command">$ git status</p>
+				verifica el estado de los paquetes.
+
+				<p class="linux-command">$ git push</p>
+				Este comando subirá los cambios a nuestro sitio.
+
+				<p>Realizamos algunas modificaciones en nuestro sitio, guardamos y ahora verificamos el estado en la terminal.</p>
+
+
+				<p class="linux-command">$ git pull origin master</p>
+				Cuando estemos listos para subir la información al repositorio ejecutamos el siguiente comando en nuestra terminal.
+
+				<p class="linux-command">$ git push origin master</p>
+				Este comando subirá los cambios a nuestro sitio.
+
+				
+			</div>
+		</li>
+
+		
+
+		<li></li>
+		<li>NodeJs (Para poder instalar componentes usando npm (Node Package Manager))</li><hr width="50%">
+		<li>Browser Sync</li><hr width="50%">
+		<li></li>
+	</ul>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="panel-footer"></div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
