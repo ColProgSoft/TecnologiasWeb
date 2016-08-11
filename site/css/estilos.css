@@ -1,36 +1,80 @@
-
+*{
+	margin: 0;
+	padding: 0;
+}
 hr{
-	margin: 15px;
+	width: 50%;
+	margin: auto;
 }
 h2{
 	text-align: center;
 }
 body{
+
 	background: #abcdef;
 }
 div{
+	border-radius: 5px;
 	padding: 5px;
-
+}
+header{
+	padding-bottom: 15px;
+	width: 100%;
+	background-color: #cdefff;
+	margin-bottom: 10px;
+}
+header h1{
+	text-align: center;
+}
+header nav{
+	background: #000;
+	width: 50%;
+	margin: auto;
+}
+p.{
+	margin-top: 10px;
+	margin-bottom: 10px
 }
 .asignature{
 	background-color: 
 }
+div.congrats{
+	margin-top: 20px;
+	margin: auto;
+	width: 80%;
+	background: #fff;
+}
+
+.instructions .linux-command{
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+	margin-top: 10px;
+}
 .instructions{
+	width: 80%;
+	margin: auto;
+	padding: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background-color: rgba(56,56,56,.2);
-	border-radius: 5px;
-	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+	
 }
 .linux-command{
 	text-shadow: #0f0;
 	border: 2px;
-	border-color: #fff;
 	border-radius: 5px;
+	border-color: #fff;
 	padding: 5px;
 	font-family: serif;
-	font-size: 23px;
+	font-size: 18px;
 	color: #fff;
 	background-color: rgb(55,55,55);
-	box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5);
+}
+div.introduction{
+	color: #fff;
+	background: #000;
+	margin: auto;
+	width: 80%;
+}
+div.introduction p{
+
 }

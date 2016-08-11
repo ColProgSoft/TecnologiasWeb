@@ -1,0 +1,22 @@
+{
+  "TituloCurso": "Convertir Un Psd En Una Web Dinámica",
+  "Descripcion": "Descripcion del video",
+  "NumVideos": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "Aprobado": false,
+  "Puntuacion": null,
+  "User": {
+    "UserId": "id",
+    "UserName": "name",
+    "UserMail": "mail"
+  }
+}
